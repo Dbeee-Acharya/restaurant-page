@@ -1,0 +1,45 @@
+body {
+    height: 100vh;
+    background: url(./images/body-background-main.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    aspect-ratio: 16/9;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header figure {
+    aspect-ratio: 1/1;
+    width: 10rem;
+}
+
+header figure img {
+    width: 100%;
+    object-fit: contain;
+}
+
+header nav {
+    display: flex;
+    gap: 10%;
+}
+
+header nav button {
+    background-color: rgba(255, 255, 255, 0.4);
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1rem;
+    width: 10rem;
+    transition: all 0.2s ease-in-out;
+}
+
+header nav button:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
