@@ -1,6 +1,12 @@
+html {
+    overflow: hidden;
+}
+
 body {
-    height: 100vh;
-    background: url(./images/body-background-main.jpg);
+    height: 100%;
+    width: 100%;
+    background:linear-gradient(0deg, rgba(30,29,29,0.8) 0%, rgba(64,63,63,0.87) 12%, rgba(48,48,48,0.74) 22%, rgba(0,0,0,0.88) 83%),
+     url(./images/body-background-main.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
@@ -12,11 +18,12 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 1rem;
 }
 
 header figure {
     aspect-ratio: 1/1;
-    width: 10rem;
+    width: 4rem;
 }
 
 header figure img {
@@ -30,16 +37,21 @@ header nav {
 }
 
 header nav button {
-    background-color: rgba(255, 255, 255, 0.4);
+    /* background-color: rgba(255, 255, 255, 0.4); */
+    background-color: transparent;
     border: none;
-    border-radius: 8px;
     font-size: 1rem;
     font-weight: 600;
-    padding: 1rem;
+    padding: 1rem 1rem 0.2rem;
     width: 10rem;
-    transition: all 0.2s ease-in-out;
+    color: white;
 }
 
 header nav button:hover {
-    background-color: rgba(255, 255, 255, 0.7);
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+}
+
+#content {
+    width: 100%;
+    text-align: center;
 }
