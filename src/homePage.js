@@ -1,16 +1,19 @@
 
 const createHomepage = () => {
     const bodyContainer = document.createElement('div');
-    bodyContainer.innerHtml = "TEST"
+    const bodyContainerHeading = document.createElement('div');
+    const bodyContainerContent = document.createElement('div');
+
+    bodyContainerHeading.innerHTML = "The Restaurant";
+    bodyContainerContent.innerHTML = "We are the restaurant";
+
     bodyContainer.classList.add('body-container');
-    // const bodyContainerHeading = document.createElement('div').classList.add('heading');
-    // const bodyContainerContent = document.createElement('div').classList.add('content');
+    bodyContainer.classList.add('active');
+    bodyContainerHeading.classList.add('heading');
+    bodyContainerContent.classList.add('content');
 
-    // bodyContainerHeading.innerHTML = "The Restaurant";
-    // bodyContainerContent.innerHTML = "We are the restaurant";
-
-    // bodyContainer.appendChild(bodyContainerHeading);
-    // bodyContainer.appendChild(bodyContainerContent);
+    bodyContainer.appendChild(bodyContainerHeading);
+    bodyContainer.appendChild(bodyContainerContent);
 
     return bodyContainer
 }

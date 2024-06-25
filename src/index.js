@@ -13,11 +13,7 @@ const header = () => {
 
     const mainContent = document.getElementById('content');
 
-    const bodyContainer = document.createElement('div');
-    bodyContainer.innerHtml = "TEST"
-    bodyContainer.classList.add('body-container');
-
-    mainContent.appendChild(bodyContainer);
+    mainContent.appendChild(createHomepage());
 }
 
 header()

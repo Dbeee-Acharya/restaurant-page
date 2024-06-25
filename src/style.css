@@ -58,11 +58,19 @@ header nav button:hover {
 }
 
 .body-container {
+    display: none;
     margin: auto;
     color: white;
     border-radius: 8px;
     background-color: rgba(255,255,255,0.4);
     width: 50%;
     margin-top: 15%;
-    text-align: center;
+    height: 10rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.active {
+    display: flex;
 }
